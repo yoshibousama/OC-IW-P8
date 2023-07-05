@@ -1,8 +1,12 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 function App() {
   return (
-    <div>
-      <p>Test sass</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
