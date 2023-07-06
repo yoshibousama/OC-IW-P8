@@ -1,8 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
-import RouteComponent from "./components/RouteComponent";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import sass from "./sass/components/container.module.scss";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Accommodation from "./pages/Accommodation";
+import Error404 from "./pages/Error404";
 
 function App() {
   return (
@@ -11,7 +14,12 @@ function App() {
         <Header />
       </header>
       <main className={sass.container}>
-        <RouteComponent />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/accommodation/:id" element={<Accommodation />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
       </main>
       <footer>
         <Footer />
