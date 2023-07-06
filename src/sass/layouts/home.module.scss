@@ -1,0 +1,11 @@
+@import "../global.scss";
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  background-color: $bg-home-clr;
+  padding: 50px;
+  margin-block: 50px;
+  border-radius: 25px;
+}

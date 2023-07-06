@@ -1,0 +1,20 @@
+@import "../global.scss";
+
+.card {
+  position: relative;
+  &_img {
+    height: 300px;
+    object-fit: cover;
+    background-color: red;
+    border-radius: 10px;
+  }
+  &_title {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: $neutral-100;
+    padding: 20px;
+    font-size: $fs-18;
+    font-weight: $fw-500;
+  }
+}

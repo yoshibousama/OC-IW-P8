@@ -1,0 +1,16 @@
+@import "../global.scss";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10px;
+  &_link {
+    padding-left: 50px;
+    color: $primary-clr;
+    font-size: $fs-24;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

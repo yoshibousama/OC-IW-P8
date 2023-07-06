@@ -1,0 +1,22 @@
+@import "../global.scss";
+
+.banner {
+  height: 223px;
+  position: relative;
+  text-align: center;
+  &_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(70%);
+  }
+  &_title {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    color: $neutral-100;
+    font-size: $fs-48;
+    font-weight: $fw-500;
+  }
+}
