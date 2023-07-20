@@ -10,7 +10,9 @@ $bg-home-clr: #f6f6f6;
 $fs-12: 12px;
 $fs-18: 18px;
 $fs-24: 24px;
+$fs-36: 36px;
 $fs-48: 48px;
+$fs-288: 288px;
 $fw-500: 500;
 $fw-700: 700;
 
@@ -25,7 +27,7 @@ $fw-700: 700;
 html:focus-within {
   scroll-behavior: smooth;
 }
-body {
+#root {
   min-height: 100vh;
 }
 a {

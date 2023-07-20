@@ -1,0 +1,29 @@
+@import "../global.scss";
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 139px;
+
+  &_title {
+    color: $primary-clr;
+    text-align: center;
+    font-size: $fs-288;
+    font-weight: $fw-700;
+  }
+
+  &_text {
+    color: $primary-clr;
+    font-size: $fs-36;
+    text-align: center;
+  }
+
+  &_link {
+    color: $primary-clr;
+    font-size: $fs-18;
+    text-decoration-line: underline;
+    margin-bottom: 89px;
+  }
+}

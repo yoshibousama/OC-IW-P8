@@ -2,10 +2,24 @@
 
 .card {
   position: relative;
+  border-radius: 10px;
+  &_gradient {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
   &_img {
     height: 300px;
     object-fit: cover;
-    background-color: red;
     border-radius: 10px;
   }
   &_title {
