@@ -15,6 +15,9 @@
     border-radius: 5px;
     width: 100%;
   }
+  &_description {
+    animation: scaleOpen 0.3s;
+  }
   &_description_title {
     font-size: $fs-24;
     margin: 0;
@@ -41,5 +44,13 @@
   .closed {
     transform: rotate(-135deg);
     transition: 0.3s;
+  }
+}
+@keyframes scaleOpen {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }
