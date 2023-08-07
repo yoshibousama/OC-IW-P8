@@ -1,0 +1,10 @@
+@import "../global.scss";
+
+ul {
+  padding: 20px;
+  list-style: none;
+}
+li {
+  color: $primary-clr;
+  font-size: $fs-18;
+}
