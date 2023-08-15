@@ -1,0 +1,12 @@
+@import "../global.scss";
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+.rating img {
+  width: 24px;
+  height: 24px;
+}

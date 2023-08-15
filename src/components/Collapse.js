@@ -19,7 +19,7 @@ const Collapse = ({ title, description }) => {
       {isToggle && (
         <div className={sass.collapse_description}>
           {Array.isArray(description) ? (
-            <ul>
+            <ul className={sass.collapse_description_text}>
               {description.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
