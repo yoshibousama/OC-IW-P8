@@ -3,18 +3,16 @@ import starOff from "../assets/star-off.png";
 import sass from "../sass/components/stars.module.scss";
 
 const Stars = ({ rate }) => {
-  const getRatingStars = (rating) => {
+  const rating = (rating) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {
-      const starClass = i < rating ? starOn : starOff;
-      stars.push(
-        <img src={starClass} alt="rating" key={i} className={starClass} />
-      );
+      const star = i < rating ? starOn : starOff;
+      stars.push(<img src={star} alt="rating" key={i} className={star} />);
     }
     return stars;
   };
 
-  return <div className={sass.rating}>{getRatingStars(rate)}</div>;
+  return <div className={sass.rating}>{rating(rate)}</div>;
 };
 
 export default Stars;
