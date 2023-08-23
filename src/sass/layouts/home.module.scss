@@ -8,4 +8,13 @@
   padding: 50px;
   margin-block: 50px;
   border-radius: 25px;
+  @media screen and (max-width: 980px) {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $neutral-100;
+    gap: 20px;
+    padding: 0px;
+  }
+  @media screen and (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
 }

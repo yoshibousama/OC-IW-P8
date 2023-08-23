@@ -18,5 +18,8 @@
   & p {
     padding-bottom: 30px;
     font-size: $fs-24;
+    @media screen and (max-width: 760px) {
+      text-align: center;
+    }
   }
 }

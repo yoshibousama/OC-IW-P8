@@ -19,8 +19,12 @@
   }
   &_img {
     height: 300px;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    @media screen and (max-width: 980px) {
+      height: 255px;
+    }
   }
   &_title {
     position: absolute;

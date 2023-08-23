@@ -20,11 +20,13 @@
     font-weight: $fw-500;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 680px) {
   .banner {
     height: 111px;
   }
   .banner_title {
     font-size: $fs-24;
+    text-align: left;
+    padding-left: 16px;
   }
 }
