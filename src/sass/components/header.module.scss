@@ -17,9 +17,15 @@
 @media screen and (max-width: 760px) {
   .nav img {
     width: 145px;
+    height: 46px;
   }
   .nav_link {
     padding-left: 10px;
     font-size: $fs-18;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav_link {
+    font-size: $fs-15;
   }
 }

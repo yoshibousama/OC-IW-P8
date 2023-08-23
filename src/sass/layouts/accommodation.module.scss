@@ -66,3 +66,32 @@ li {
 .collapse_right {
   width: 45%;
 }
+@media screen and (max-width: 760px) {
+  .accommodation_details {
+    flex-direction: column;
+  }
+  .description_right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .accommodation_host {
+    align-items: center;
+    justify-content: center;
+  }
+  .accommodation_host_picture {
+    width: 50px;
+    height: 50px;
+  }
+
+  .accommodation_information {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .collapse_left,
+  .collapse_right {
+    width: 100%;
+  }
+}
