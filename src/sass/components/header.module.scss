@@ -14,3 +14,12 @@
     }
   }
 }
+@media screen and (max-width: 760px) {
+  .nav img {
+    width: 145px;
+  }
+  .nav_link {
+    padding-left: 20px;
+    font-size: $fs-18;
+  }
+}

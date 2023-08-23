@@ -20,3 +20,11 @@
     font-weight: $fw-500;
   }
 }
+@media screen and (max-width: 460px) {
+  .banner {
+    height: 111px;
+  }
+  .banner_title {
+    font-size: $fs-24;
+  }
+}
